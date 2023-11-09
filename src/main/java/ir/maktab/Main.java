@@ -88,6 +88,16 @@ public class Main {
                         Function.identity(),
                         (a, b) -> a
                 ));
+        // corrected version!!!
+        //        return list.stream()
+//                .sorted(Comparator.comparing(Person::getLastName))
+//                .filter(person -> person.getGender().equals("Female") && person.getAge() > 40 && !person.getFirstName().startsWith("A"))
+//                .skip(5)
+//                .limit(100)
+//                .collect(Collectors.toMap(
+//                        person -> person.getFirstName() + " " + person.getLastName(),
+//                        person -> person ,
+//                        (existingPerson,newPerson)->existingPerson));
     }
 
 
